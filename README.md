@@ -114,8 +114,8 @@ browsing_tracker/
 ### Step 1 — Clone and run setup
 
 ```bash
-git clone <your-repo-url>
-cd browsing_tracker
+git clone https://github.com/bssatya/browsing-tracker
+cd browsing-tracker
 bash setup.sh
 ```
 
