@@ -28,6 +28,9 @@ env/
 .AppleDouble
 .LSOverride
 
+# ─── Local notes (not for repo) ───────────────────────────────────────────────
+RECORDING_GUIDE.md
+
 # ─── Editor ───────────────────────────────────────────────────────────────────
 .vscode/
 .idea/

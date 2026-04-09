@@ -333,6 +333,38 @@ If you pull updates from git, re-run `bash setup.sh` to copy updated scripts to 
 
 ---
 
+## Stopping and Uninstalling
+
+### Stop the server temporarily
+
+```bash
+launchctl unload ~/Library/LaunchAgents/com.browsingtracker.server.plist
+```
+
+To start it again:
+
+```bash
+launchctl load ~/Library/LaunchAgents/com.browsingtracker.server.plist
+```
+
+### Remove everything permanently
+
+```bash
+# Stop and remove the launchd service
+launchctl unload ~/Library/LaunchAgents/com.browsingtracker.server.plist
+rm ~/Library/LaunchAgents/com.browsingtracker.server.plist
+
+# Remove all cron jobs
+crontab -l | grep -v "browsing-tracker" | crontab -
+
+# Remove all data and scripts (optional — this deletes your browsing history database)
+rm -rf ~/.browsing_tracker
+```
+
+To also remove the Firefox extension: open `about:debugging#/runtime/this-firefox` → find the extension → click **Remove**.
+
+---
+
 ## Cost
 
 Uses **Claude Haiku** (Anthropic's cheapest model).
