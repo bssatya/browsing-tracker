@@ -6,6 +6,12 @@ No pre-defined categories. Claude looks at your actual data and decides what the
 
 ---
 
+## Demo
+
+[![Watch the demo](https://img.youtube.com/vi/EW5BPC3ORbU/0.jpg)](https://youtu.be/EW5BPC3ORbU)
+
+---
+
 ## What It Does
 
 - **Tracks time** spent on every browser tab in real time (exact seconds, not estimated)
