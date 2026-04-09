@@ -1,0 +1,27 @@
+{
+  "_instructions": [
+    "Copy this file to ~/.browsing_tracker/config.json and fill in your values.",
+    "For smtp_password use a Gmail App Password, NOT your account password.",
+    "Generate an App Password at: https://myaccount.google.com/apppasswords",
+    "Get your Anthropic API key at: https://console.anthropic.com/",
+    "To find your Firefox profile name, run: python3 list_profiles.py",
+    "Or open Firefox and go to: about:profiles"
+  ],
+
+  "email_to":        "you@gmail.com",
+  "smtp_from":       "you@gmail.com",
+  "smtp_host":       "smtp.gmail.com",
+  "smtp_port":       465,
+  "smtp_user":       "you@gmail.com",
+  "smtp_password":   "xxxx-xxxx-xxxx-xxxx",
+
+  "anthropic_api_key": "sk-ant-...",
+
+  "_firefox_profile_instructions": [
+    "Set firefox_profile to the exact folder name of the profile you want to track.",
+    "Example: 'abc12def.default-release' or 'xyz99abc.work-profile'",
+    "Run 'python3 list_profiles.py' to see all available profiles.",
+    "Leave as null to auto-select the first default profile found."
+  ],
+  "firefox_profile": null
+}

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Browsing Behavior Tracker",
+  "version": "1.0",
+  "description": "Tracks time spent per tab for behavioral analysis and email reports.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "windows",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Browsing Behavior Tracker"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "browsing-tracker@local",
+      "strict_min_version": "91.0"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+# ─── Credentials & config (never commit these) ────────────────────────────────
+config.json
+*.env
+.env*
+
+# ─── Runtime data ─────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.log
+*.log.*
+
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.venv/
+env/
+.env/
+
+# ─── macOS ────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ─── Editor ───────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
